@@ -6,7 +6,9 @@ include README.rst
 include requirements-tox.txt
 include requirements.txt
 include setup.py
+prune *.pyc
+prune .git
+prune docs/_build
 recursive-include {{ Project.module }} *.py
 recursive-include tests *.py
 recursive-include docs *
-prune *.pyc
